@@ -17,7 +17,7 @@ class AppTheme{
   static final ThemeData darkTheme = ThemeData.dark().copyWith(
     primaryColor: primary,
     appBarTheme:const AppBarTheme(
-      color: primary
+      color: primary,
     ),
     scaffoldBackgroundColor: Colors.black,
     dividerTheme: const DividerThemeData(
