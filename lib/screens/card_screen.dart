@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/theme/app_theme.dart';
+import 'package:my_app/widgets/widgets.dart';
 
 class CardScreen extends StatelessWidget {
   final String? name;
@@ -13,28 +13,15 @@ class CardScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: ListView(
-        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-        children: [
-          Card(
-            child: Column(
-              children: const[
-                ListTile(
-                  leading: Icon(Icons.photo_album_outlined,color: AppTheme.primary,),
-                  title: Text('Soy un titulo'),
-                )
-              ],
-            ),
-          ),
-          Card(
-            child: Column(
-              children: const[
-                ListTile(
-                  leading: Icon(Icons.photo_album_outlined,color: AppTheme.primary,),
-                  title: Text('Soy un titulo'),
-                )
-              ],
-            ),
-          ),
+        padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+        children: const [
+          CardWidget1(),
+          SizedBox(height: 10),
+          CardWidget2(),
+          SizedBox(height: 10),
+          CardWidget2(),
+          SizedBox(height: 10),
+          CardWidget2(),
         ],
       )
     );

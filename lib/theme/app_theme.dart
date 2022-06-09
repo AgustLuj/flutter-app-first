@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTheme{
 
-  static const Color  primary = Colors.blueGrey;
+  static const Color  primary = Colors.orange;
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     primaryColor: primary,
     appBarTheme:const AppBarTheme(
@@ -11,6 +11,9 @@ class AppTheme{
     dividerTheme: const DividerThemeData(
       endIndent: 10,
       indent: 10,
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style:TextButton.styleFrom(primary: primary)
     )
   );
 
@@ -24,6 +27,9 @@ class AppTheme{
       color: Colors.white,
       endIndent: 10,
       indent: 10,
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style:TextButton.styleFrom(primary: primary)
     )
   );
 }
